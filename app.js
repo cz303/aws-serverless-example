@@ -8,7 +8,7 @@ const bot = new Telegraf(BOT_API_KEY)
 // Mongo DB initialization
 var MongoClient = require('mongodb').MongoClient;
 
-var url = "mongodb+srv://telegram_bot:3kFAYPtEWlT5c0Kf@frankfurt-jcg1n.mongodb.net/test";
+var url = "mongodb://heroku_kf7m1gcx:joo1pn43j84nd35bjsp5qf0mqb@ds137488.mlab.com:37488/heroku_kf7m1gcx";
 
 bot.command('start', ({ reply }) => {
   return reply('Welcome to rewards bot. We are now commencing token reward bounties, please perform each bounty task and submit your details to get the airdrops.', Markup
